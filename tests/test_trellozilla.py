@@ -6,7 +6,7 @@
 
 import unittest
 
-from trellozilla import trellozilla
+import trellozilla
 
 
 class TestTrelloZilla(unittest.TestCase):

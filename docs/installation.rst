@@ -1,9 +1,7 @@
 .. highlight:: shell
 
-============
 Installation
 ============
-
 
 Stable release
 --------------
@@ -21,7 +19,6 @@ you through the process.
 
 .. _pip: https://pip.pypa.io
 .. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
-
 
 From sources
 ------------
@@ -45,7 +42,6 @@ Once you have a copy of the source, you can install it with:
 .. code-block:: console
 
     $ python setup.py install
-
 
 .. _Github repo: https://github.com/moisesguimaraes/trellozilla
 .. _tarball: https://github.com/moisesguimaraes/trellozilla/tarball/master

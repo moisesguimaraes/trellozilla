@@ -64,6 +64,8 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+docs/modules.rst
+docs/trellozilla.rst
 
 # PyBuilder
 target/
@@ -100,3 +102,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Visual Studio code
+.vscode
