@@ -4,8 +4,8 @@ TrelloZilla
 .. image:: https://img.shields.io/pypi/v/trellozilla.svg
         :target: https://pypi.python.org/pypi/trellozilla
 
-.. image:: https://img.shields.io/travis/moisesguimaraes/trellozilla.svg
-        :target: https://travis-ci.org/moisesguimaraes/trellozilla
+.. image:: https://api.travis-ci.com/moisesguimaraes/trellozilla.svg?branch=master
+        :target: https://travis-ci.com/moisesguimaraes/trellozilla
 
 .. image:: https://readthedocs.org/projects/trellozilla/badge/?version=latest
         :target: https://trellozilla.readthedocs.io/en/latest/?badge=latest

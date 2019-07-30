@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+0.0.3
+-----
+
+* fixes travis-ci badge
+
+0.0.2
+-----
+
+* fixes description-content-type and bumps version
+
 0.0.1
 -----
 
