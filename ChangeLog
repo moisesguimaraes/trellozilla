@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+0.0.4
+-----
+
+* add pre-commit support with black and flake8
+
 0.0.3
 -----
 

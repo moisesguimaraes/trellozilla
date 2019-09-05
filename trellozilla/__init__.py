@@ -12,7 +12,8 @@ __version__ = pbr.version.VersionInfo("trellozilla").version_string()
 
 
 def get_config():
-    """Returns a new config object with registered trellozilla config options.
+    """
+    Returns a new config object with registered trellozilla config options.
 
     :returns: an oslo_config.cfg.ConfigOpts object
     """
@@ -24,7 +25,8 @@ def get_config():
 
 
 def trello_api(conf):
-    """Returns a new Trello API object initialized with the provided configuration.
+    """
+    Returns a new Trello API object with the provided configuration.
 
     :returns: a TrelloClient object
     """
@@ -37,7 +39,8 @@ def trello_api(conf):
 
 
 def bugzilla_api(conf):
-    """Returns a new Bugzilla API object initialized with the provided configuration.
+    """
+    Returns a new Bugzilla API object with the provided configuration.
 
     :returns: a Bugzilla object
     """
