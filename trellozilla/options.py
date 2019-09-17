@@ -56,12 +56,3 @@ def list_opts():
     :returns: a list of (group_name, opts) tuples
     """
     return [("bugzilla", _bugzilla_opts), ("trello", _trello_opts)]
-
-
-def register_opts(conf):
-    """Registers trellozilla config options to a config object.
-
-    :param conf: an oslo_config.cfg.ConfigOpts object
-    """
-    for opts in list_opts():
-        conf.register_opts(opts[1], opts[0])
