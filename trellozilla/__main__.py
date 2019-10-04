@@ -1,3 +1,3 @@
-from trellozilla import TrelloZilla
+from trellozilla import main
 
-TrelloZilla().run()
+main()

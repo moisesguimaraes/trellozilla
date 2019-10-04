@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
-
 import functools
-
 import pbr.version
 
 from trellozilla import options
@@ -44,6 +41,8 @@ def register_opts(conf):
 
     :param conf: an oslo_config.cfg.ConfigOpts object
     """
+    logging.register_options(conf)
+
     for group, opts in options.list_opts():
         conf.register_opts(opts, group)
 
@@ -104,9 +103,9 @@ class TrelloZilla:
     def bugzilla(self):
         return bugzilla_api(self.conf)
 
-    def fetch_bzs(self, bugzilla_querry_url):
+    def fetch_bzs(self, bugzilla_query_url):
         return self.bugzilla.query(
-            self.bugzilla.url_to_query(bugzilla_querry_url)
+            self.bugzilla.url_to_query(bugzilla_query_url)
         )
 
     def run(self):
@@ -126,3 +125,7 @@ class TrelloZilla:
                 )
         except Exception:
             LOG.exception("trellozilla failed to connected to bugzilla.")
+
+
+def main():
+    TrelloZilla().run()

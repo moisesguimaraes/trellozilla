@@ -3,7 +3,7 @@
 Installation
 ============
 
-Stable release
+stable release
 --------------
 
 To install TrelloZilla, run this command in your terminal:
@@ -20,7 +20,7 @@ you through the process.
 .. _pip: https://pip.pypa.io
 .. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
 
-From sources
+from sources
 ------------
 
 The sources for TrelloZilla can be downloaded from the `Github repo`_.
