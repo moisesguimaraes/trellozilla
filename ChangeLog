@@ -1,9 +1,10 @@
 CHANGES
 =======
 
-0.0.6
+0.1.0
 -----
 
+* updates requirements to fix CI
 * updates Makefile to use python3 and fixes a few typos
 
 0.0.5
