@@ -111,16 +111,16 @@ class TrelloZilla:
     def run(self):
         try:
             self.trello.list_boards()
-            LOG.info("trellozilla successfully connected to trello.")
+            LOG.info("trellozilla successfully connects to trello.")
         except Exception:
             LOG.exception("trellozilla failed to connected to trello.")
 
         try:
             if self.bugzilla.logged_in:
-                LOG.info("trellozilla successfully connected to bugzilla.")
+                LOG.info("trellozilla successfully connects to bugzilla.")
             else:
                 LOG.info(
-                    "trellozilla successfully connected to bugzilla, "
+                    "trellozilla successfully connects to bugzilla, "
                     "but the user is not logged in."
                 )
         except Exception:

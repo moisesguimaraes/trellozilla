@@ -1,22 +1,27 @@
 Usage
 =====
 
-TreloZilla requires you to provide some configuration values in order to
-give you back both Trello and Bugzilla API objects.  The sample configuration
-file is well documented and self-explanatory about how you can produce the
-right values in it.
+TrelloZilla requires you to provide configuration values for both Trello's
+and Bugzilla's API.  The sample configuration file is well documented and
+self-explanatory about how you can produce the right values for it.
 
-Generating a configuration file
--------------------------------
+Generating configuration files
+------------------------------
 
-To generate a sample configuration file:
+To generate sample configuration files:
 
 .. code-block:: console
 
-    $ oslo-config-generator --namespace trellozilla.config > trellozilla.conf
+    $ mkdir -p ~/.trellozilla/trellozilla.conf.d
 
-To learn more about where to put your configuration file, check the 
-`oslo.config documentation`_.
+    $ cd ~/.trellozilla/trellozilla.conf.d
+
+    $ oslo-config-generator --namespace trellozilla > trellozilla.conf
+
+    $ oslo-config-generator --namespace oslo.log > logging.conf
+
+Check the `oslo.config documentation`_ to learn more about other places
+where you can place your configuration files.
 
 The Trello configuration
 ------------------------
@@ -60,7 +65,7 @@ To use TrelloZilla in a project:
 
     conf = trellozilla.get_config()
 
-    conf()  # or `conf(project="my_project")` to help oslo.config finding your config file.
+    conf("trellozilla")  # or `conf(project="my_project")` to help oslo.config finding your config file.
 
     trello = trellozilla.trello_api(conf)
     bugzilla = trellozilla.bugzilla_api(conf)

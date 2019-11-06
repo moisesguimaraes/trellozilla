@@ -23,4 +23,4 @@ Features
 * Configurable via oslo.config;
 * Generates Trello access tokens;
 * Builds Trello API objects based on provided config;
-* BUilds Bugzilla API objects based on provided config.
+* Builds Bugzilla API objects based on provided config.

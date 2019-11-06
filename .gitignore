@@ -104,5 +104,9 @@ ENV/
 # mypy
 .mypy_cache/
 
+# pbr
+AUTHORS
+ChangeLog
+
 # Visual Studio code
 .vscode
