@@ -11,7 +11,7 @@ TrelloZilla
         :target: https://trellozilla.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-TrelloZilla contains a small set of boilerplate code to speed up automations
+TrelloZilla is a small set of boilerplate code to speed up automations
 in/between both Bugzilla and Trello.
 
 * Free software: Apache Software License 2.0
@@ -22,5 +22,5 @@ Features
 
 * Configurable via oslo.config;
 * Generates Trello access tokens;
-* Builds Trello API objects based on provided config;
-* Builds Bugzilla API objects based on provided config.
+* Creates Trello API objects based on provided config;
+* Creates Bugzilla API objects based on provided config.
