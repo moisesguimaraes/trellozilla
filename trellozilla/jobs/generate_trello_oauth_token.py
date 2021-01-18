@@ -1,9 +1,10 @@
 from oslo_config import cfg
 from trello.util import create_oauth_token
-from trellozilla import TrelloZilla
+
+import trellozilla
 
 
-class GenerateTrelloOAuthToken(TrelloZilla):
+class GenerateTrelloOAuthToken(trellozilla.TrelloZilla):
     def __init__(self):
         super().__init__()
 

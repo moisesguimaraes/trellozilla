@@ -1,3 +1,3 @@
-from trellozilla import main
+from trellozilla import main  # pragma: no cover
 
-main()
+main()  # pragma: no cover

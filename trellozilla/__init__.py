@@ -52,7 +52,7 @@ class TrelloZilla:
         try:
             self.trello.list_boards()
             LOG.info("trellozilla successfully connects to trello.")
-        except Exception:
+        except Exception:  # pragma: no cover
             LOG.exception("trellozilla failed to connected to trello.")
 
         try:
@@ -63,9 +63,9 @@ class TrelloZilla:
                     "trellozilla successfully connects to bugzilla, "
                     "but the user is not logged in."
                 )
-        except Exception:
+        except Exception:  # pragma: no cover
             LOG.exception("trellozilla failed to connected to bugzilla.")
 
 
-def main():
+def main():  # pragma: no cover
     TrelloZilla().run()

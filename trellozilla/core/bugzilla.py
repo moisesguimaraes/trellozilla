@@ -1,4 +1,4 @@
-from bugzilla import Bugzilla
+import bugzilla
 
 
 def get_api_client(conf):
@@ -7,4 +7,4 @@ def get_api_client(conf):
 
     :returns: a Bugzilla API client object
     """
-    return Bugzilla(conf.bugzilla.url, api_key=conf.bugzilla.api_key)
+    return bugzilla.Bugzilla(conf.bugzilla.url, api_key=conf.bugzilla.api_key)

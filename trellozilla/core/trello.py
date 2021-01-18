@@ -1,4 +1,4 @@
-from trello import TrelloClient
+import trello
 
 
 def get_api_client(conf):
@@ -7,7 +7,7 @@ def get_api_client(conf):
 
     :returns: a TrelloClient object
     """
-    return TrelloClient(
+    return trello.TrelloClient(
         api_key=conf.trello.api_key,
         api_secret=conf.trello.api_secret,
         token=conf.trello.token,
