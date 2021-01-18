@@ -6,8 +6,6 @@
 
 import unittest
 
-import trellozilla
-
 
 class TestTrelloZilla(unittest.TestCase):
     """Tests for `trellozilla` package."""

@@ -50,21 +50,6 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr htmlcov/
 	rm -fr .pytest_cache
 
-lint: ## check style with flake8
-	flake8 trellozilla tests
-
-test: ## run tests quickly with the default Python
-	python3 setup.py test
-
-test-all: ## run tests on every Python version with tox
-	tox
-
-coverage: ## check code coverage quickly with the default Python
-	coverage run --source trellozilla setup.py test
-	coverage report -m
-	coverage html
-	$(BROWSER) htmlcov/index.html
-
 docs: ## generate Sphinx HTML documentation, including API docs
 	rm -f docs/trellozilla.rst
 	rm -f docs/modules.rst
@@ -83,7 +68,3 @@ dist: clean ## builds source and wheel package
 	python3 setup.py sdist
 	python3 setup.py bdist_wheel
 	ls -l dist
-
-install: clean ## install the package to the active Python's site-packages
-	python3 setup.py install
-
