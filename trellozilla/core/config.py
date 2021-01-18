@@ -1,4 +1,15 @@
 from oslo_config import cfg
+from oslo_log import log as logging
+
+extra_log_level_defaults = [
+    "bugzilla=WARN",
+    "oauthlib=WARN",
+    "requests_oauthlib=WARN",
+]
+logging.set_defaults(
+    default_log_levels=logging.get_default_log_levels()
+    + extra_log_level_defaults
+)
 
 _bugzilla_opts = [
     cfg.URIOpt("url", help="Your Bugzilla url", required=True, secret=True),
@@ -56,3 +67,27 @@ def list_opts():
     :returns: a list of (group_name, opts) tuples
     """
     return [("bugzilla", _bugzilla_opts), ("trello", _trello_opts)]
+
+
+def register_opts(conf):
+    """Registers trellozilla config options to a config object.
+
+    :param conf: an oslo_config.cfg.ConfigOpts object
+    """
+    logging.register_options(conf)
+
+    for group, opts in list_opts():
+        conf.register_opts(opts, group)
+
+
+def get_config():
+    """
+    Returns a new config object with registered trellozilla config options.
+
+    :returns: an oslo_config.cfg.ConfigOpts object
+    """
+    conf = cfg.ConfigOpts()
+
+    register_opts(conf)
+
+    return conf
