@@ -18,7 +18,7 @@ If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
 
 .. _pip: https://pip.pypa.io
-.. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
+.. _Python installation guide: https://docs.python-guide.org/en/latest/starting/installation/
 
 from sources
 ------------
@@ -27,7 +27,7 @@ The sources for TrelloZilla can be downloaded from our `git repo`_:
 
 .. code-block:: console
 
-    $ git clone git://github.com/moisesguimaraes/trellozilla
+    $ git clone https://github.com/moisesguimaraes/trellozilla.git
 
 Once you have a copy of the source, you can install it with:
 

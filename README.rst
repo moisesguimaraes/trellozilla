@@ -11,16 +11,25 @@ TrelloZilla
         :target: https://trellozilla.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-TrelloZilla is a small set of boilerplate code to speed up automations
-in/between both Bugzilla and Trello.
+TrelloZilla is a small set of boilerplate code to
+automate jobs in/between both Bugzilla and Trello.
 
-* Free software: Apache Software License 2.0
-* Documentation: https://trellozilla.readthedocs.io.
+TrelloZilla is Free Software and released under the
+`Apache Software License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_.
+
+The complete TrelloZilla documentation can be found at
+`readthedocs.io <https://trellozilla.readthedocs.io>`_.
 
 Features
 --------
 
-* Configurable via oslo.config;
-* Generates Trello access tokens;
-* Creates Trello API objects based on provided config;
-* Creates Bugzilla API objects based on provided config.
+* TrelloZilla is configurable via oslo.config so you can safely provide
+  your Trello and Bugzilla credentials, and as well be able to customize
+  your automated jobs.
+
+* The ``generate_trello_oauth_token`` job can be used to generate the Trello
+  credentials required by TrelloZilla.
+
+* TrelloZilla can create Trello API client objects based on provided credentials.
+
+* TrelloZilla can create Bugzilla API client objects based on provided credentials.
